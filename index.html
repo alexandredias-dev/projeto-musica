@@ -36,15 +36,27 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     p { font-size: 18px; line-height: 1.5; margin-bottom: 25px; }
     .price { font-size: 32px; font-weight: bold; color: #00bf63; margin-bottom: 30px; }
     
-    .btn { 
-        display: block; /* Ocupa a largura necessária */
+    ..btn { 
+        display: block; 
         background-color: #00b628; 
         color: white; 
         padding: 18px 20px; 
         text-decoration: none; 
         border-radius: 10px; 
         font-weight: 600; 
-        font-size: 20px; 
+        font-size: 20px;
+        /* Efeito de pulsação */
+        animation: pulse 2s infinite;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 182, 40, 0.5);
+    }
+
+    /* A animação de pulso */
+    @keyframes pulse {
+        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 182, 40, 0.7); }
+        70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(0, 182, 40, 0); }
+        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 182, 40, 0); }
     }
 
     /* Ajuste para telas maiores */
@@ -62,7 +74,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         
         <div class="price">Por apenas R$29,90</div>
         
-        <a href="https://wa.me/556182187692?text=Ol%C3%A1%2C%20quero%20pedir%20minha%20m%C3%BAsica%20personalizada" class="btn" onclick="ttq.track('ClickButton');">Pedir minha música</a>
+        <a href="https://wa.me/556182187692?text=Ol%C3%A1%2C%20quero%20pedir%20minha%20m%C3%BAsica%20personalizada" class="btn" onclick="ttq.track('ClickButton');">👉 PEDIR MINHA MÚSICA</a>
 
     </div>
 </body>
