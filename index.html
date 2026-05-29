@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TikTok Pixel Code Start -->
 <script>
 !function (w, d, t) {
@@ -17,29 +17,41 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 <!-- TikTok Pixel Code End -->
     <style>
     body { 
-        font-family: 'Open Sauce', sans-serif; 
+        font-family: sans-serif; 
         text-align: center; 
-        padding: 20px; 
-        color: #fff;
         margin: 0;
         min-height: 100vh;
-        
-        /* A MÁGICA ESTÁ AQUI: */
-        /* O linear-gradient aplica um filtro escuro sobre a imagem */
+        color: #fff;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                     url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        padding: 10px;
     }
     
-    .container { max-width: 600px; margin: 100px auto; padding: 20px; }
+    .container { max-width: 600px; margin: 40px auto; padding: 20px; }
     
-    h1 { font-size: 42px; font-weight: 600; text-decoration: underline; margin-bottom: 20px; }
-    p { font-size: 21px; line-height: 1.5; margin-bottom: 20px; }
-    .price { font-size: 37px; font-weight: bold; color: #00bf63; margin-bottom: 30px; }
-    .btn { display: inline-block; background-color: #00b628; color: white; padding: 20px 40px; text-decoration: underline; border-radius: 10px; font-weight: 600; font-size: 26px; transition: transform 0.2s; }
-    .btn:hover { transform: scale(1.05); }
+    h1 { font-size: 28px; line-height: 1.2; margin-bottom: 20px; }
+    p { font-size: 18px; line-height: 1.5; margin-bottom: 25px; }
+    .price { font-size: 32px; font-weight: bold; color: #00bf63; margin-bottom: 30px; }
+    
+    .btn { 
+        display: block; /* Ocupa a largura necessária */
+        background-color: #00b628; 
+        color: white; 
+        padding: 18px 20px; 
+        text-decoration: none; 
+        border-radius: 10px; 
+        font-weight: 600; 
+        font-size: 20px; 
+    }
+
+    /* Ajuste para telas maiores */
+    @media (min-width: 600px) {
+        h1 { font-size: 42px; }
+        p { font-size: 21px; }
+    }
 </style>
 </head>
 <body>
